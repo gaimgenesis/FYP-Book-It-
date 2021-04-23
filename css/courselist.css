@@ -1,0 +1,179 @@
+.course-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.course-list li{
+    background-color: lightgrey;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.course-list li:hover{
+    background-color: white;
+}
+
+.mathead{
+	display: inline-block;
+}
+
+.upload{
+  background-color: #ccc;
+  margin-left: 10px;
+  border: solid gray;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.upload:hover{
+  background-color: #A9A9A9;
+  color: white;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 230px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f2f2f2;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  right: 0;
+  padding-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.uploadmat{
+  background-color: #ccc;
+  margin-left: 135px;
+  border: solid gray;
+  padding: 10px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.uploadmat:hover{
+  background-color: #A9A9A9;
+  color: white;
+}
+
+.mat-disp ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mat-disp li{
+	font-size: 18px;
+	font-weight: bold;
+	background-color: lightsteelblue;
+	position: relative;
+	display: inline-block;
+	border: 1px solid black;
+	width: 60%;
+	padding: 10px 0 10px 10px;
+	cursor: pointer;
+}
+
+.mat-disp li:hover{
+	background-color: lightgrey;
+}
+
+.downloadmat{
+  display: inline-block;
+}
+
+.download{
+  background-color: lightskyblue;
+  margin-left: 50px;
+  border: solid gray;
+  padding: 10px;
+  width: 125px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.download:hover{
+  background-color: #A9A9A9;
+  color: white;
+}
+
+.downloadstd{
+  background-color: lightskyblue;
+  margin-left: 100px;
+  border: solid gray;
+  padding: 10px;
+  width: 125px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.downloadstd:hover{
+  background-color: #A9A9A9;
+  color: white;
+}
+
+.delete{
+  background-color: lightcoral;
+  margin-left: 90px;
+  border: solid gray;
+  padding: 10px;
+  width: 125px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.delete:hover{
+  background-color: #A9A9A9;
+  color: white;
+}
+
+.nores{
+    font-size: 20px;
+}

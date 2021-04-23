@@ -1,0 +1,270 @@
+#box{
+	padding: 10px 10px;	
+  padding-bottom: 10px;
+	background: rgb(247,247,247);
+	background: linear-gradient(180deg, rgba(247,247,247,1) 0%, rgba(217,228,247,1) 54%, rgba(126,191,255,1) 100%);
+}
+
+#list{
+  padding: 10px 10px; 
+  padding-bottom: 10px;
+  background: #ccc;
+}
+
+.btn-group{
+	padding-left: 220px;
+}
+
+.btn-group h4{
+	padding-right: 25px;
+}
+
+.btn-group button {
+  background-color: #B0C4DE; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 35px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #ADD8E6;
+}
+
+.btn-group button.active{
+	background-color: #ADD8E6;
+}
+
+#conditions{
+	padding-left: 180px;
+}
+
+#conditions h5{
+	float:left;
+	padding-right: 10px;
+}
+
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+}
+
+.container:hover input ~ .checkmark{
+  background-color: #A9A9A9;
+}
+
+.container input:checked ~ .checkmark{
+  background-color: #2196F3;
+}
+
+.checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after{
+  display: block;
+}
+
+.container .checkmark:after{
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.timepicker{
+  float: left;
+  width: 13%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.notice{
+  color: red;
+}
+
+.valid{
+  margin-left: 450px; 
+  background-color: #ccc;
+  border: solid gray;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.valid:hover{
+  background-color: #A9A9A9;
+  color: white;
+}
+
+.report{
+  margin-left: 700px; 
+  background-color: #ccc;
+  border: solid gray;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.report:hover{
+  background-color: #A9A9A9;
+  color: white;
+}
+
+#list ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#list li{
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#list li.conlist{
+  background: rgb(247,247,247);
+  background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(106,249,112,1) 60%);
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#list li.booked{
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,133,133,1) 51%, rgba(255,52,52,1) 100%);
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+#list li.conlist:hover{
+  font-size: 20px;
+  background: rgb(161,255,144);
+  background: linear-gradient(270deg, rgba(161,255,144,1) 0%, rgba(0,255,7,1) 100%, rgba(241,255,239,1) 100%);
+}
+
+#list li.booked:hover{
+  font-size: 20px;
+  background: rgb(255,0,0);
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,190,190,1) 100%, rgba(255,0,0,1) 100%);
+}
+
+#listings{
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#opt{
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 100px;
+  float: right;
+}
+
+.deletecancel button {
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  margin-left: 125px;
+  margin-right: 10px;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.deletecancel:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.deletecancel button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.deletecancel .delete{
+  border-radius: 5px;
+  border: 1px solid gray; /* Green border */
+  background-color: red;
+}
+
+.deletecancel .cancel{
+  border-radius: 5px;
+  background-color: grey;
+  border: 1px solid gray; /* Green border */
+  color: black;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 230px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #f2f2f2;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  right: 0;
+  padding-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,276 @@
+#mainchat {
+	width: 100%;
+	min-width: 350px;
+	max-width: 2000px;
+	height: 83vh;
+	min-height: 300px;
+	max-height: 720px;
+	background: #E6EAEA; 
+}
+
+@media screen and (max-width: 360px){
+	#mainchat{
+		width: 100%;
+		height: 100vh;
+	}
+}
+
+#mainchat #chatframe{
+	float: left;
+	min-width: 250px;
+	max-width: 300px;
+	width: 30%;
+	height: 83vh;
+	background: #2c3e50;
+	color: #f5f5f5;
+	overflow-y: auto;
+	position: relative;
+}
+
+@media screen and (max-width: 735px){
+	#mainchat #chatframe{
+		width: 58px;
+		min-width: 58px;
+	}
+}
+
+#chatframe::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0, 0.3);
+	background-color: #949597;
+}
+
+#chatframe::-webkit-scrollbar {
+	background-color: white;
+	width: 8px;
+}
+
+#chatframe::-webkit-scrollbar-thumb {
+	background-color: #babac0;
+	border-radius: 16px;
+	border: 0 solid #fff;
+}
+
+#chatframe::-webkit-scrollbar-button {
+	display:none;
+}
+
+#chatframe ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#chatframe li{
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid black;
+	width: 100%;
+	padding: 20px 0 15px 20px;
+	background-color: #32465a;
+	margin: 0 auto;
+}
+
+#chatframe li:hover{
+	background: #06529D; 
+}
+
+#chatframe li.contact.active{
+	background: #06529D;
+}
+
+@media screen and (max-width: 735px){
+	#chatframe li{
+		padding: 6px 0 46px 8px;
+	}
+}
+
+.chat {
+	float: right;
+	width: 60%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+@media screen and (max-width: 730px){
+	.chat{
+		width: calc(100% - 50px);
+		min-width: 300px !important;
+	}
+}
+
+@media screen and (min-width: 900px){
+	.chat{
+		width: calc(100% - 300px);
+	}
+}
+
+.chat .chatbox{
+	height: auto;
+	min-height: calc(95% - 93px);
+	max-height: calc(95% - 93px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 730px){
+	.chat .chatbox{
+		max-height: calc(90% - 105px);
+	}
+}
+
+.chat .chatbox::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0, 0.3);
+	background-color: #949597;
+}
+
+.chat .chatbox::-webkit-scrollbar {
+	background-color: white;
+	width: 8px;
+}
+
+.chat .chatbox::-webkit-scrollbar-thumb {
+	background-color: #babac0;
+	border-radius: 16px;
+	border: 0 solid #fff;
+}
+
+.chat .chatbox::-webkit-scrollbar-button {
+	display:none;
+}
+
+.chat .chatbox ul li{
+	display: inline-block;
+	clear: both;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	width: calc(100% - 25px);
+	font-size: 0.9em;
+}
+
+.chat .chatbox ul li.sent p{
+	background: #435f7a;
+	color: #f5f5f5;
+	float: right;
+}
+
+.chat .chatbox ul li.replies p{
+	background: #f5f5f5;
+	float: left;
+}
+
+.chat .chatbox ul li p{
+	display: inline-block;
+	padding: 10px 15px;
+	border-radius: 20px;
+	max-width: 700px;
+	line-height: 120%;
+}
+
+@media screen and (min-width: 730px){
+	.chat .chatbox ul li p{
+		max-width: 700px;
+	}
+}
+
+.message-input{
+	position: absolute;
+	bottom: 0;
+	padding-bottom: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 100%;
+	z-index: 99;
+}
+
+.message-input .wrap{
+	position: relative;
+}
+
+.message-input .wrap input{
+	float: left;
+	border: none;
+	width: calc(95% - 50px);
+	padding: 10px 32px 10px 8px;
+	color: #32465a;
+}
+
+@media screen and (max-width: 735px){
+	.message-input .wrap input{
+		padding: 15px 32px 16px 8px;
+	}
+}
+
+.message-input .wrap button{
+	float: left;
+	border: none;
+	width: 6%;
+	cursor: pointer;
+	background: #32465a;
+	color: #f5f5f5;
+}
+
+#icon{
+	padding-top: 9px;
+	padding-bottom: 9px; 
+	padding-left: 2px;
+}
+
+#profile{
+	background: rgb(247,247,247);
+	background: linear-gradient(270deg, rgba(247,247,247,1) 0%, rgba(202,248,239,1) 27%, rgba(50,70,90,1) 95%);
+	width: 100%;
+}
+
+#profile p{
+	cursor: pointer;
+	width: 100%;
+	color: white;
+	padding: 20px 0 18px 20px;
+	transition: 0.5s;
+}
+
+#profile a{
+	color: white;
+}
+
+#profile p:hover{
+	background-color: #486684;
+}
+
+#profile p:hover:before{
+	content: "Check Profile for ";
+}
+
+.nomessage{
+	font-size: 20px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.gotoprof{
+	background-color: lightskyblue;
+	border: solid gray;
+	padding: 10px;
+	width: 125px;
+	text-decoration: none;
+	font-size: 16px;
+	transition-duration: 0.2s;
+	position: absolute;
+	top: 58%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+  
+.gotoprof:hover{
+	background-color: #A9A9A9;
+	color: white;
+}

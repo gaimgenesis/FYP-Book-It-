@@ -1,0 +1,217 @@
+/* consultslot.php's css */
+.noconsult{
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.content{
+    /* margin-left: 250px; */
+    display: flex;
+}
+
+.consultdisp{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.consultdisp li{
+    background-color: lightgrey;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid black;
+    width: 70%;
+    padding: 10px 0 0px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.consultdisp li:hover{
+    background-color: white;
+}
+
+.ffk{
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-right: -50%;
+    transform: translate(-10%, -100%)
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 230px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    right: 0;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .cancel{
+    background-color: lightcoral;
+    margin-left: 60px;
+    border: solid gray;
+    padding: 10px;
+    width: 125px;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+  
+  .cancel .book .cancelsess:hover{
+    background-color: #A9A9A9;
+    color: white;
+  }
+
+  .book{
+    background-color: lightgreen;
+    margin-left: 50px;
+    border: solid gray;
+    padding: 10px;
+    width: 125px;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+
+  .modal-content2 {
+    background-color: #f2f2f2;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+
+  .cancelsess{
+    background-color: lightcoral;
+    margin-left: 100px;
+    border: solid gray;
+    padding: 10px;
+    width: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+  }
+
+  .reasoning{
+    width: 80%;
+  }
+
+  .nosessbtn{
+    background-color: whitesmoke;
+    border: solid gray;
+    padding: 10px;
+    width: 20%;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+  }
+
+  .nosessbtn:hover{
+    background-color: lightgray;
+  }
+
+  .nosess{
+    font-size: 30px;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.modal-contentreport {
+  background-color: #f2f2f2;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+}
+
+.reportsess{
+  margin-left: 150px; 
+  background-color: lightcoral;
+  border: solid gray;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  width: 25%;
+}
+
+.reportsess:hover{
+  background-color: #A9A9A9;
+  color: white;
+}
+
+.disabled {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,133,133,1) 51%, rgba(255,52,52,1) 100%);
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    pointer-events:none;
+    opacity:0.6;
+}
+
+.ban{
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right:-50%;
+  transform: translate(-50%, -50%)
+}
